@@ -11,21 +11,6 @@ import {fonts} from '../theme/theme';
 
 const FavouriteCatList = () => {
   const favouriteCats = useSelector(state => state.cats.cats);
-  console.log('catess', favouriteCats);
-
-  // const cats = [
-  //   'Australian Mist',
-  //   'Balinese',
-  //   'Bambino',
-  //   'American Shorthair',
-  //   'American Whitehair',
-  // ];
-
-  // React.useEffect(() => {
-  //   getFavouriteCats()
-  //     .then(data => console.log('stored data', data))
-  //     .catch(error => console.error('error', error));
-  // }, []);
   const renderItem = ({item}) => <FavouriteCat item={item} />;
 
   return (
@@ -40,7 +25,6 @@ const FavouriteCatList = () => {
           You don't have any liked cat 😔, go like some and come back 😊
         </Text>
       )}
-      // numColumns={3}
     />
   );
 };

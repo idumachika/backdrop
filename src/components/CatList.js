@@ -18,7 +18,6 @@ import {fonts} from '../theme/theme';
 const CatList = () => {
   const {data, isError, error} = useGetAllCatsQuery();
 
-  console.log('data-catlist', data);
   const renderItem = ({item}) => <Cat item={item} />;
   return (
     <>
@@ -43,7 +42,6 @@ const CatList = () => {
 const Cat = ({item}) => {
   const [favourite, setFavourite] = React.useState(false);
   const dispatch = useDispatch();
-  // on load, show  which one is liked already
   const addCat = id => {
     if (id === item.id) {
       dispatch(add(item));
