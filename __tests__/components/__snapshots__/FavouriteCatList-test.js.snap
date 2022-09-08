@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FavouriteCatlist/> tests should render the FavouriteCatlist 1`] = `null`;
